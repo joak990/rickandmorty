@@ -1,0 +1,38 @@
+ .container {
+
+  align-content: flex-start;
+  
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: Metal Mania,cursive;
+  gap: 40px;
+margin-top: 70px;
+  justify-content: center;
+ margin-right: 20px;
+  max-width: 1400px;
+  height: 1600px;
+  margin-left:50px;
+
+ }
+
+ @media (max-width: 767px) { /* ajustar el tamaño según sea necesario */
+  .container{
+    margin-left: 200px;
+    width: 10px;
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+  }  
+  /* ajusta el margen para mover el botón hacia la derecha */
+   
+ }
+   
+   .card {
+   /* para que las cartas ocupen todo el ancho del contenedor */
+     margin: 10px 0; /* para agregar un margen en la parte superior e inferior de cada carta */
+   }
+ 
+
+  
