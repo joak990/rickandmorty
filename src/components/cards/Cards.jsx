@@ -5,7 +5,7 @@ return(
 <div className='container'>
 
       {props.characters.map((character,index) => (
-        <Card 
+        <Card
         
           key={character.id}
           name={character.name}
@@ -14,7 +14,8 @@ return(
           gender={character.gender}
           origin={character.origin.name}
           image={character.image}
-          onClose={() => window.alert('Emulamos que se cierra la card')}
+          id={character.id}
+          onClose={character.onClose}
         />
       ))}
   

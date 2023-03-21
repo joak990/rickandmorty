@@ -1,21 +1,15 @@
 import "./card.css";
-import React, { useState } from "react";
-export default function Card(props) {
-   const [showCard, setShowCard] = useState(true);
-   const handleClose = () => {
-      setShowCard(false);
-  setTimeout(() => {
-    setShowCard(null); // null para eliminar la tarjeta del DOM
-  }, 5000); // tiempo en milisegundos para esperar la transición
-};
 
-   if (!showCard) {
-     return null;} // si la tarjeta no se muestra, retorna null
+export default function Card(props,onClose,id) {
+  
+ 
+
+
    return (
    
       <div className="card">
         
-          <button className="close" onClick={handleClose}>X</button>
+          <button className="close" onClick={props.onClose}>X</button>
           
           <button className="ver-personaje">Ver personaje</button>
          <h2>{props.name}</h2>
