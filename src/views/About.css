@@ -1,0 +1,41 @@
+.container-about {
+
+justify-content: center;
+align-items: center;
+
+color: aliceblue;
+font-size: 25px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+.container-p{
+    font-size: 22px;
+    color: rgb(252, 252, 252);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 2px black;
+    animation: animateText 2s ease-in-out infinite;
+
+}
+@keyframes animateText {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }}
+
+
+    .joaquin{
+    display: flex;
+    flex-direction: column;
+        color: aliceblue;
+        font-size: 22px;
+        font-weight: bold;
+        margin-right: 1000px;
+    }
+
+    h1 {}

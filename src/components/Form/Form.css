@@ -1,0 +1,112 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    flex-direction: column;
+    
+}
+
+.submit-button {
+    background-color: #591069; /* Color de fondo */
+    color: white; /* Color del texto */
+     /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Radio del borde */
+    cursor: pointer; /* Cursor apuntador */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+width: 100px;
+height: 50px;
+margin-left: 60px;
+align-items: center;
+text-align: center;
+}
+label {
+    color: rgb(227, 222, 225);
+ 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+}
+
+.submit-button:hover {
+    background-color: #cb22e1; /* Color de fondo al pasar el mouse */
+  }
+
+  .email-i {
+    padding: 8px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Radio del borde */
+  box-shadow: 0 0 5px #a2138f; /* Sombra del cuadro */
+  font-size: 16px; /* Tamaño de fuente */
+
+  }
+  .password-i {
+    margin-left: 88px;
+  padding: 8px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Radio del borde */
+  box-shadow: 0 0 5px #a2138f; /* Sombra del cuadro */
+  font-size: 16px; /* Tamaño de fuente */
+
+  }
+
+  .title-c{
+    font-size: 23px;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: flex-start;
+height: 150px;
+
+
+  }
+span{
+    align-items: center;
+    margin-top: 38px;
+    margin-left: 17px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+color: #cb22e1;
+}
+
+  .ball {
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(to bottom right, #FF5733, #F7DC6F, #6DD5FA, #A569BD, #FFC300);
+    border-radius: 50%;
+    position: relative;
+    animation: jump 0.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes jump {
+    0% {
+      bottom: 0;
+    }
+    100% {
+      bottom: 50px;
+    }
+  }
+
+.showpass{
+  border: none;
+  background:rgb(245, 21, 178);
+  font-size: 20px;
+  color: #dbdfdb;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20%;
+  margin-left: 5px ;
+
+}
+
+@media (max-width: 767px) { /* ajustar el tamaño según sea necesario */
+body{
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.form {
+  box-sizing: inherit;
+}
+}

@@ -1,0 +1,66 @@
+
+.container {
+    display: flex;
+
+}
+
+
+.character-props {
+    /* Propiedades de estilo */
+ 
+   display: flex;
+   flex-direction: column;
+    font-size: 30px; /* Tamaño de fuente */
+    color: #f6eded; /* Color del texto */
+    text-shadow: 1px 1px 0 #100c0c; /* Sombra de texto */
+    font-family: 'Covered By Your Grace', cursive;
+   
+    border-radius: 5px; /* Radio del borde */
+    padding: 5px; /* Espaciado interno */
+    margin: 10px; /* Espaciado externo */
+    animation: shake 0.5s ease-in-out infinite alternate;
+  }
+
+
+  @keyframes shake {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(3px);
+    }
+  }
+
+  .image-detail {
+    margin-left: 110px;
+    margin-top: 170px;
+    display: flex;
+    justify-content: end;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+   
+  }
+  
+  .image-detail:hover {
+    transform: scale(1.1);
+  }
+
+
+  @media (max-width: 767px) { /* ajustar el tamaño según sea necesario */
+   
+    .image-detail{
+      margin-right:150px;
+      align-items: center;
+      justify-content: center center;
+   
+    }
+    .image-container{
+      height: 700px;
+    }
+    .character-props{
+      width: 600px;
+      height: 800px ;
+    }
+  }
+
+ 

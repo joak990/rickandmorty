@@ -1,12 +1,42 @@
 import './App.css';
 import Cards from './components/cards/Cards.jsx';
 import Nav from './components/Nav';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
+import {Routes, Route} from 'react-router-dom'
+import About from './views/About';
+import Detail from './components/Detail';
+import Form from './components/Form/Form';
+import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 //component app
 function App() {
+   const location = useLocation()
    const [randomCharacter,setRandomCharacter]=useState(null)
    const [characters,setCharacters] = useState([])
+   const [access,setAccess]=useState(false)
+   const EMAIL ="joakhaid@gmail.com"
+   const PASSWORD = "joak123"
+  const Navigate = useNavigate()
+
+
+useEffect(()=>{
+!access &&Navigate("/")
+},[access])
+
+//funcion login
+
+const login =(userData)=>{
+         if(userData.password===PASSWORD&&userData.username===EMAIL){
+         setAccess(true)
+         Navigate('/home')
+}else {
+  alert("credenciales invalidas")
+}
+}
+
+
    //function filter
    const onClose =  (id) =>{
       setCharacters(characters.filter(character=>character.id !==id))}
@@ -45,10 +75,14 @@ function App() {
    return (
             //render of components      
          <div className='App'>
-          <Nav  getRandomCharacter={getRandomCharacter} onSearch={onSearch}/>
-         <Cards characters={characters} onClose={onClose} />
+      {location.pathname !== '/' && <Nav getRandomCharacter={getRandomCharacter} onSearch={onSearch} />}
+        <Routes>
+        <Route  path='/' element={<Form login={login}/>}></Route>
+      <Route path='/home' element={<Cards characters={characters} onClose={onClose}/>}></Route>
+         <Route path='/about' element={<About/>}></Route>
+         <Route path='/detail/:id' element={<Detail/>}></Route>
+      </Routes>
       
-
       </div>
    );
 }

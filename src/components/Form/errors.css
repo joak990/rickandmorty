@@ -1,0 +1,10 @@
+.warning {
+    background-color: red;
+    border-radius: 10px red solid;
+    color:white 
+}
+
+.success {
+    border-radius: 1px green solid;
+}
+

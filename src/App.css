@@ -5,3 +5,11 @@
 .Card {
    background: #971c1c;
 }
+
+
+@media (max-width: 767px) { /* ajustar el tamaño según sea necesario */
+  .app{
+   margin-top: 300px;
+  }
+   
+  }

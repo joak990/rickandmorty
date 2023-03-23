@@ -4,7 +4,7 @@ export default function Cards(props) {
 return(
 <div className='container'>
 
-      {props.characters.map((character,index) => (
+      {props.characters.map((character,index,) => (
         <Card
         
           key={character.id}

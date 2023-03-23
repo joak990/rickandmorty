@@ -17,17 +17,18 @@
 @media (max-width: 767px) { /* ajustar el tamaño según sea necesario */
   .boton-search {
     text-align: center;/* ajusta el margen para mover el botón hacia la derecha */
-    margin-right: 15px;
-    margin-top: 25px;
-    width: 220px;
+    margin-right:70px;
+    margin-top: 5px;
+    width: 200px;
     align-items: center;
 
     
   }
   .inputsearch {
     font-size: 15px;
-    max-width: 300px;
+    max-width: 200px;
     height: 40px;
+    margin-right: 60px;
     
   }
 
@@ -40,6 +41,7 @@
 
 
   .inputsearch{
+    
     border: none; /* Quitamos el borde predeterminado */
   background-color: #f2f2f2; /* Color de fondo */
   padding: 10px 20px; /* Agregamos un poco de espacio interno */
@@ -47,9 +49,9 @@
   font-size: 10px; /* Tamaño de la fuente */
   width: 300px; /* Ancho del input */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
-  margin-top: 0px;
-  background-color: #03091e;
-  color: white;
+ 
+  background-color: #ededed;
+  color: rgb(8, 7, 7);
   box-shadow:  #637a9d;;
   
 }
