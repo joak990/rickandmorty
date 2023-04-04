@@ -13,6 +13,7 @@
     transition: all 0.3s ease-in-out; /* transición suave al pasar el mouse */
     cursor: pointer; /* cambiar el cursor al pasar el mouse */
     margin-left: 10px;
+    margin-right: 100px;
 }
 @media (max-width: 767px) { /* ajustar el tamaño según sea necesario */
   .boton-search {

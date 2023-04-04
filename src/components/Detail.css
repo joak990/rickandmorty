@@ -5,12 +5,14 @@
 }
 
 
+
+
 .character-props {
     /* Propiedades de estilo */
  
    display: flex;
    flex-direction: column;
-    font-size: 30px; /* Tamaño de fuente */
+    font-size: 33px; /* Tamaño de fuente */
     color: #f6eded; /* Color del texto */
     text-shadow: 1px 1px 0 #100c0c; /* Sombra de texto */
     font-family: 'Covered By Your Grace', cursive;

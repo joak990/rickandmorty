@@ -43,21 +43,24 @@ login(userData)
          placeholder='Escriba su email' /> 
        </div>
        <p className='warning'>{errors.username}</p> 
-       <div>
-        <label htmlFor="password">Password:</label>
+       <div className='divpass-'>
+       <label className='label-pass' htmlFor="password">Password:</label>
+        
         <input 
         onChange={handleChange} 
         value={userData.password}
-         //className={errors.password && 'warning'}
+                               //className={errors.password && 'warning'}
          type={showPassword ? 'text' : 'password'}name='password' 
           placeholder='Ingrese su clave'
-          className='password-i'/>
+           className='password-i'/>
            <button className='showpass' type="button" onClick={toggleShowPassword}>
             {showPassword ? 'Ocultar' : 'Mostrar'}
           </button>
               
         </div>
+
         <p className='warning'>{errors.password}</p> 
+      
         <button  className='submit-button'>Login</button>
       </form>
     </div>

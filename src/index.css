@@ -5,7 +5,7 @@ body {
   background-repeat: no-repeat;
 	background-size: 100% 100%;
   background-attachment: fixed;
-  height: 100vh;
+  height: 1vh;
   width: 100vw;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -23,7 +23,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 120%;
   background-color: rgba(5, 4, 4, 0.5); /* ajusta la opacidad aquí */
   z-index: -1; /* asegura que el pseudo-elemento esté detrás del contenido */
 }
@@ -36,3 +36,4 @@ code {
 h1 {
   color: white;
 }
+
